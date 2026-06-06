@@ -1,0 +1,23 @@
+cabal-version: 3.4
+name:          nvim-release-tui
+version:       0.1.0.0
+license:       BSD-3-Clause
+build-type:    Simple
+
+executable nvim-release-tui
+  main-is:          Main.hs
+  hs-source-dirs:   app
+  default-language: GHC2021
+  ghc-options:      -Wall -O2 -threaded
+  build-depends:
+      base >= 4.17 && < 5
+    , aeson >= 2.2
+    , bytestring
+    , text
+    , vector
+    , brick >= 2.10 && < 3
+    , vty >= 6
+    , http-conduit >= 2.3
+    , directory
+    , filepath
+    , mtl
